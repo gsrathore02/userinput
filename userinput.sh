@@ -6,7 +6,8 @@ until [ "$selection" = "0" ]; do
     echo "Program Menu"
     echo "1 - display free disk space"
     echo "2 - display free memory"
-    echo ""
+    echo "3 - current process"
+    echo "4 - uptime"
     echo "0 - exit program"
     echo ""
     echo -n "Enter selection: "
@@ -15,6 +16,8 @@ until [ "$selection" = "0" ]; do
     case $selection in
         1 ) df ;;
         2 ) free ;;
+        3 ) top ;;
+        4 ) w ;;
         0 ) exit ;;
         * ) echo "Please enter 1, 2, or 0"
     esac
