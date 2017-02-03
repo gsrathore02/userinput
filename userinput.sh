@@ -3,7 +3,7 @@
 selection= # variable
 until [ "$selection" = "0" ]; do
     echo ""
-    echo "PROGRAM MENU"
+    echo "Program Menu"
     echo "1 - display free disk space"
     echo "2 - display free memory"
     echo ""
@@ -19,5 +19,3 @@ until [ "$selection" = "0" ]; do
         * ) echo "Please enter 1, 2, or 0"
     esac
 done
-
-
